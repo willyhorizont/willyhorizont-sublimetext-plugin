@@ -98,7 +98,9 @@ def sublime_text_select_lines(self, edit, forward=True):
         #     target_text_point = self.view.text_point((target_row - 1), target_prev_col)
         new_target_text_point = (target_text_point + target_line_length)
         print(f"new_target_text_point_if={new_target_text_point}")
-        settings.set("target_prev_col", target_col)
+        if (target_line_length > 0):
+            settings.set("target_prev_col", target_col)
+            print(f"target_prev_col set to {target_col}")
     else:
         new_target_text_point = (target_text_point + (target_col - 1))
         if target_prev_col:
@@ -106,6 +108,7 @@ def sublime_text_select_lines(self, edit, forward=True):
             new_target_text_point = (target_text_point - 1)
         print(f"new_target_text_point_else={new_target_text_point}, target_col={target_col}")
         settings.set("target_prev_col", None)
+        print(f"target_prev_col set to {None}")
     print(f"new_target_text_point_final={new_target_text_point}")
 
     target_text_point = new_target_text_point
