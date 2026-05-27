@@ -1,0 +1,9 @@
+{
+	"theme": "Default Dark.sublime-theme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+	"font_size": 9,
+}

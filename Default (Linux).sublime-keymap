@@ -1,0 +1,33 @@
+[
+    // VS Code Duplicate Line Up
+    // { "keys": ["shift+alt+up"], "command": "vscode_duplicate_selected_up" },
+    { "keys": ["shift+alt+up"], "command": "willyhorizont_keyboard_shortcut", "args": {"action": "vscode_duplicate_selected_up"}  },
+
+    // VS Code Duplicate Line Down
+    // { "keys": ["shift+alt+down"], "command": "vscode_duplicate_selected_down" },
+    { "keys": ["shift+alt+down"], "command": "willyhorizont_keyboard_shortcut", "args": {"action": "vscode_duplicate_selected_down"}  },
+    
+    // VS Code Move Line
+    { "keys": ["alt+up"], "command": "swap_line_up" },
+    { "keys": ["alt+down"], "command": "swap_line_down" },
+
+    // VS Code Add Cursor Above Current
+    { "keys": ["ctrl+alt+up"], "command": "select_lines", "args": {"forward": false} },
+
+    // VS Code Add Cursor Below Current
+    { "keys": ["ctrl+alt+down"], "command": "select_lines", "args": {"forward": true} },
+    
+    // VS Code Toggle Console
+    { "keys": ["ctrl+`"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+    // VS Code Override Sublime Text
+    // { "keys": ["ctrl+shift+up"], "command": "sublime_text_select_lines", "args": {"forward": false} },
+    // { "keys": ["ctrl+shift+down"], "command": "sublime_text_select_lines", "args": {"forward": true} },
+
+    { "keys": ["ctrl+shift+up"], "command": "willyhorizont_keyboard_shortcut", "args": {"action": "sublime_text_select_lines", "forward": false} },
+    { "keys": ["ctrl+shift+down"], "command": "willyhorizont_keyboard_shortcut", "args": {"action": "sublime_text_select_lines", "forward": true} },
+
+    // VS Code Override Sublime Text
+    // { "keys": ["ctrl+shift+up"], "command": "do_nothing" },
+    // { "keys": ["ctrl+shift+down"], "command": "do_nothing" },
+]

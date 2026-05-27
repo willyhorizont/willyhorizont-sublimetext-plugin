@@ -1,0 +1,19 @@
+[
+    {
+        "id": "tools",
+        "children":
+        [
+            {
+                "caption": "Willy Horizont",
+                "children":
+                [
+                    {
+                        "caption": "Clear Console",
+                        "command": "willyhorizont_utils",
+                        "args": {"action": "clear_console"}
+                    }
+                ]
+            }
+        ]
+    }
+]
