@@ -15,7 +15,12 @@
 ].map((k) => ("vscode keyboard (shortcut|keybinding)" + k + " in Sublimetext")).join("\n")  
 
 ## Installation  
-Replace All ~/.config/sublime-text/Packages/User  
+```
+cd ~/.config/sublime-text/Packages/User
+git remote set-url origin https://github.com/willyhorizont/willyhorizont-sublimetext-plugin.git
+git fetch origin
+git reset --hard origin/main  
+```
 
 
 ## Author  
