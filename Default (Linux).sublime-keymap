@@ -6,10 +6,13 @@
     { "keys": ["ctrl+shift+down"], "command": "willyhorizont_keyboard_shortcut", "args": {"action": "vscode_ctrl_shift_up_or_down", "forward": true} },
     { "keys": ["alt+up"], "command": "swap_line_up" },
     { "keys": ["alt+down"], "command": "swap_line_down" },
-
+    
     // TODO:
+    // { "keys": ["shift+left"], "command": "willyhorizont_keyboard_shortcut", "args": {"action": "set_state_column", "forward": false} },
+    // { "keys": ["shift+right"], "command": "willyhorizont_keyboard_shortcut", "args": {"action": "set_state_column", "forward": true} },
     { "keys": ["shift+alt+up"], "command": "willyhorizont_keyboard_shortcut", "args": {"action": "vscode_duplicate_selected_up"}  },
     { "keys": ["shift+alt+down"], "command": "willyhorizont_keyboard_shortcut", "args": {"action": "vscode_duplicate_selected_down"}  },
+    // { "keys": ["esc"], "command": "willyhorizont_keyboard_shortcut", "args": {"action": "vscode_esc"}  },
     // { "keys": ["shift+alt+up"], "command": "vscode_duplicate_selected_up" },
     // { "keys": ["shift+alt+down"], "command": "vscode_duplicate_selected_down" },
 ]

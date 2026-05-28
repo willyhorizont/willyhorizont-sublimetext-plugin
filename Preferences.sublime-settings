@@ -1,5 +1,5 @@
 {
-	"theme": "Default Dark.sublime-theme",
+	"theme": "ayu-dark.sublime-theme",
 	"ignored_packages":
 	[
 		"Vintage",
@@ -8,5 +8,5 @@
 	"font_size": 10,
 	"console_max_history_lines": 3000,
 	"sidebar_on_right": true,
-	"color_scheme": "Monokai.sublime-color-scheme",
+	"color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
 }

@@ -102,16 +102,16 @@ def vscode_ctrl_shift_up_or_down(self, edit, forward=True, show_log=True):
     current_row, current_col = self.view.rowcol(current_selection.b)
     current_row += 1
     current_col += 1
-    log(f"current_row = {current_row}, current_col = {current_col}")
+    log(f"current_row, current_col = {current_row}, {current_col}")
 
     target_row = (current_row + (1 if forward else -1))
     target_col = current_col
     if not col:
         settings.set("col", target_col)
-        log(f"col={target_col}, message=\"just setting\"")
+        log(f"col, message = {target_col}, \"just setting\"")
     else:
-        log(f"col={col}, message=\"not setting\"")
-    log(f"target_row = {target_row}, target_col = {target_col}")
+        log(f"col, message = {col}, \"not setting\"")
+    log(f"target_row, target_col = {target_row}, {target_col}")
 
     target_row_line_text_point = self.view.text_point((target_row - 1), 0)
     log(f"target_row_line_text_point = {target_row_line_text_point}")
@@ -122,7 +122,7 @@ def vscode_ctrl_shift_up_or_down(self, edit, forward=True, show_log=True):
     target_row_line_length = target_row_line.size()
     log(f"target_row_line_length = {target_row_line_length}")
 
-    target_col = (expected_or_stored_col if ((expected_or_stored_col := settings.get("col", target_col)) <= target_row_line_length) else target_row_line_length)
+    target_col = (expected_or_stored_col if ((expected_or_stored_col := settings.get("col", target_col)) <= target_row_line_length) else (target_row_line_length + 1))
     log(f"target_col = {target_col}")
 
     target_text_point = (target_row_line_text_point + (target_col - 1))
