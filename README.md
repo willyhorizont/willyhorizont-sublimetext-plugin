@@ -1,6 +1,6 @@
 # willyhorizont-sublimetext-plugin  
 
-## Sublimetext with VS Code feel | Sublimetext vscode-ify | vscode keyboard shortcut/keybinding in Sublimetext  
+## Sublimetext with VS Code feel | Sublimetext vscode-ify | vscode keyboard shortcut or keybinding in Sublimetext  
 
 [  
     "ctrl+`",  
@@ -12,7 +12,7 @@
     "alt+down",  
     "shift+alt+up",  
     "shift+alt+down",  
-].map((k) => ("vscode keyboard (shortcut|keybinding)" + k + " in Sublimetext")).join("\n")  
+].map((k) => ("vscode keyboard shortcut or keybinding " + k + " in Sublimetext")).join("\n")  
 
 ## Installation  
 ```

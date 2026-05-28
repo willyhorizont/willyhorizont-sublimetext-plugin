@@ -11,6 +11,21 @@
                         "caption": "Clear Console",
                         "command": "willyhorizont_utils",
                         "args": {"action": "clear_console"}
+                    },
+                    {
+                        "caption": "Print Python Version",
+                        "command": "willyhorizont_utils",
+                        "args": {"action": "print_python_version"}
+                    },
+                    {
+                        "caption": "Toggle Log Commands",
+                        "command": "willyhorizont_utils",
+                        "args": {"action": "toggle_log_commands"}
+                    },
+                    {
+                        "caption": "Toggle Log Input",
+                        "command": "willyhorizont_utils",
+                        "args": {"action": "toggle_log_input"}
                     }
                 ]
             }
